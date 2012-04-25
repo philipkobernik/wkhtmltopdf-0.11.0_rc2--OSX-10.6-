@@ -25,7 +25,8 @@ I used the following [instructions](http://code.google.com/p/wkhtmltopdf/wiki/co
 > $ make
 > $ sudo make install
 
-*Compile Notes*
+
+**Compile Notes**
 
 when running ../wkqt/bin/qmake, I received the following error
 
@@ -33,17 +34,22 @@ when running ../wkqt/bin/qmake, I received the following error
 
 on the subsequent 'make' command, hundreds of warnings were printed in reference to qmake files not being visible. I'd copy the warnings verbatim, but they're gone now.
 
-*Tests*
 
-````$ wkhtmltoimage news.ycombinator.com hacker_news.jpg
-````Loading page (1/2)
-````Rendering (2/2)
-````Done
+**Tests**
 
-````$ wkhtmltopdf news.ycombinator.com hacker_news.pdf
-````Loading pages (1/6)
-````Counting pages (2/6)
-````Resolving links (4/6)
-````Loading headers and footers (5/6)
-````Printing pages (6/6)
-````Done
+````
+$ wkhtmltoimage news.ycombinator.com hacker_news.jpg
+Loading page (1/2)
+Rendering (2/2)
+Done
+````
+
+````
+$ wkhtmltopdf news.ycombinator.com hacker_news.pdf
+Loading pages (1/6)
+Counting pages (2/6)
+Resolving links (4/6)
+Loading headers and footers (5/6)
+Printing pages (6/6)
+Done
+````
